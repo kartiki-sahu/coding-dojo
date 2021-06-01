@@ -9,7 +9,8 @@ var letterCombinations = function(digits) {
         7: ['p', 'q', 'r', 's'],
         8: ['t', 'u', 'v'],
         9: ['w', 'x', 'y', 'z']
-    }, results = []
+    }, 
+    results = [];
 
     const walk = (index, prefix) => {
         if (index == digits.length) return results.push(prefix)
